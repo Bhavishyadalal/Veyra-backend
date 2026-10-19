@@ -21,12 +21,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Wake service and verify its identity
-        env:
-          HEALTH_URL: https://veyra-listen-together.onrender.com/healthz
-        run: |
-          set -euo pipefail
-          curl --fail --silent --show-error \
-            --retry 2 --retry-all-errors --retry-delay 5 --retry-max-time 180 \
-            --connect-timeout 15 --max-time 60 \
-            "$HEALTH_URL" --output "$RUNNER_TEMP/veyra-health.json"
-          python3 scripts/verify_health.py "$RUNNER_TEMP/veyra-health.json"
+        run: bash scripts/keepalive.sh

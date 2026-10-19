@@ -15,6 +15,10 @@ The app migration is deliberately a second step: deploy this server, verify its 
 
 It does **not** relay audio, implement WebRTC, fetch music streams or need TURN/STUN credentials. Each app streams its own music using its existing sources. The supplied relay screenshots are not configuration for this protocol; no relay credentials are bundled.
 
+## External cron support
+
+[Set up a 12-minute external cron job](CRON_SETUP.md): public HTTP GET settings, a reusable shell helper, testing steps and the existing GitHub Actions fallback. Both stable and preview Android builds share this backend; no phone-side background timer is needed.
+
 ## Live deployment and keep-alive
 
 Service: **https://veyra-listen-together.onrender.com** · [Health](https://veyra-listen-together.onrender.com/healthz) · [Keep-alive runs](https://github.com/Bhavishyadalal/Veyra-backend/actions/workflows/render-keepalive.yml).
