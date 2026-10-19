@@ -7,6 +7,11 @@
       "bytes": 547
     },
     {
+      "path": ".github/workflows/render-keepalive.yml",
+      "sha256": "bf876044f9caf3df16886643e81a885e804cfbe19c925bc30e62ea39c9703f22",
+      "bytes": 919
+    },
+    {
       "path": ".github/workflows/test.yml",
       "sha256": "15de76eb1a6dc5a074cdc840cfbd9d605ae2b052e6b134c92e3edcefd5a65f9b",
       "bytes": 412
@@ -38,8 +43,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "bff137749dd6ae52611134aa8890b5d133a9a0dad4a1e524d762b4c31a74b33d",
-      "bytes": 9632
+      "sha256": "cac54fa993cf4adb7dcbfb2af305bd20c33f0667f7121c2cfe59b15f2483c793",
+      "bytes": 11284
     },
     {
       "path": "UPSTREAM.md",
@@ -48,8 +53,8 @@
     },
     {
       "path": "VERIFICATION.md",
-      "sha256": "9eb852a4914e4e103bcba67195cd6efaf83d8472970f5a56acabb1ca8e57b5e1",
-      "bytes": 4652
+      "sha256": "d8f674cbe5cead8587c60ff6597acc1a78a168730bcaf6758bc4753e1a84f2a1",
+      "bytes": 5648
     },
     {
       "path": "app-endpoint-audit.json",
@@ -170,6 +175,11 @@
       "path": "render.yaml",
       "sha256": "b7414187836fb922aaaf007d33bc00e3023d4da8c4353d0f70a6ed6cc6edf537",
       "bytes": 930
+    },
+    {
+      "path": "scripts/verify_health.py",
+      "sha256": "ec932dd2746694c7610ea712951c77eb8086cdc3c1eb011a8663c33d7ee48130",
+      "bytes": 863
     },
     {
       "path": "verification-results.json",
